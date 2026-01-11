@@ -79,3 +79,25 @@ console.log(earnPoints(100000,'SILVER'))
 console.log(earnPoints(100000,'일반'))
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+// 5번 영화 티켓 가격 계산
+const movieTicketPrice = function (movieType, is_earlybird_discount, audienceCount ){
+  // 객체로 영화 종류별 가격 관리
+  const movieTypePrice = {
+  '일반': 14_000,
+  '3D': 17_000,
+  'IMAX': 20_000
+  }
+  // 논리 연산자를 활용하여 조조할인 조건 처리(조조 상영일 때 0.2퍼센트의 할인율 적용, 이외에는 0원 적용)
+  const earlybirdDiscount = (is_earlybird_discount ==='조조 상영' && movieTypePrice[movieType] * 0.2) || 0
+  // count 변수 선언하여 최종 영화 티켓 최종 가격 계산
+  const count = (movieTypePrice[movieType] - earlybirdDiscount) * audienceCount
+  // 엄격한 숫자 변환 타입을 사용하여 변환값 타입(Number)로 반환하기
+  return Number(count) 
+}
+//테스트 코드
+//// 일반 영화, 조조 할인 O, 4명
+console.log(movieTicketPrice('일반', '조조 상영', 4))
+// 3D 영화, 조조 할인 X, 2명
+console.log(movieTicketPrice('3D', '일반 상영', 2))
+// IMAX 영화, 조조 할인 O, 3명
+console.log(movieTicketPrice('IMAX', '조조 상영', 3))
