@@ -40,11 +40,12 @@ console.log(welconeMessage('예지', 'basic'))
   //const calculateDeliveryFee =  (orderPrice <= 0 || orderPrice >= 50_000) && '0' || (fees[deliveryArea] || 3_000)
 
   // 수정 한 코드 : 변수 추가 및 논리 연산자를 활용한 조건문 작성
+  // 무료 배송 여부(5만원 이하 또는 0원 이하)
   const FREE_SHIPPING_FEE = 50_000
   const BASE_FEE = 3_000
-  // 무료 배송 여부(5만원 이하 또는 0원 이하)
+  // 5만원 이하 또는 0원 이하이면 무료 배송 값 적용되는 변수 선언
   const isFreeShipping = orderPrice <= 0 || orderPrice >=FREE_SHIPPING_FEE
-  // 지역별(제주/도서) 요금 추가
+  // 지역별(제주/도서) 요금 추가(그 외에 지역은 추가 요금 없음)
   const extraFee = fees[deliveryArea] || 0
   // 최종 배송비 계산 변수 선언
   const calculateDeliveryFee = isFreeShipping && '0' || BASE_FEE + extraFee
