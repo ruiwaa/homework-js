@@ -30,14 +30,25 @@ console.log(welconeMessage('예지', 'basic'))
 
 // 2번 배송비 계산
 //
- const deliveryFees = function (ordrerPrice, deliveryArea){
+ const deliveryFees = function (orderPrice, deliveryArea){
   //배송 지역(키값)에 따른 배송비(값) 객체 만들기
   const fees = {
-  "제주" : 6_000 ,
-  "도서" : 6_000
+  "제주" : 3_000 ,
+  "도서" : 3_000
   }
-  // 논리 연산자를 활용하여 주문 금액에 따른 배송비를 반환하는 변수 만들기
-  const calculateDeliveryFee =  (ordrerPrice <= 0 || ordrerPrice >= 50_000) && '0' || (fees[deliveryArea] || 3_000)
+  // 논리 연산자를 활용하여 주문 금액에 따른 배송비를 반환하는 변수 만들기 (가독성이 떨어짐)
+  //const calculateDeliveryFee =  (orderPrice <= 0 || orderPrice >= 50_000) && '0' || (fees[deliveryArea] || 3_000)
+
+  // 수정 한 코드 : 변수 추가 및 논리 연산자를 활용한 조건문 작성
+  const FREE_SHIPPING_FEE = 50_000
+  const BASE_FEE = 3_000
+  // 무료 배송 여부(5만원 이하 또는 0원 이하)
+  const isFreeShipping = orderPrice <= 0 || orderPrice >=FREE_SHIPPING_FEE
+  // 지역별(제주/도서) 요금 추가
+  const extraFee = fees[deliveryArea] || 0
+  // 최종 배송비 계산 변수 선언
+  const calculateDeliveryFee = isFreeShipping && '0' || BASE_FEE + extraFee
+  // 숫자 타입을 유지하기 위해 최송 배송비 변수에 parseInt 적용
  return parseInt(calculateDeliveryFee) + '원'
  }
 
