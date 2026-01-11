@@ -67,5 +67,15 @@ console.log(passwordValidationm('123456789012345678901'))
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // 4번 포인트 적립 계산
+function earnPoints (paymentAmount, membershipLevel) {
+  const calculateEarnpoints = ((membershipLevel === 'VIP' && paymentAmount * 0.05) || (membershipLevel === 'GOLD' && paymentAmount * 0.03) || (membershipLevel === 'SILVER' && paymentAmount * 0.01) || (membershipLevel === '일반' && paymentAmount * 0.005))
+  // 소수점은 반환하지 않게 하기 위해 parseInt를 반환값에 적용
+  return parseInt(calculateEarnpoints) +'포인트'
+}
+//테스트 코드
+console.log(earnPoints(100000,'VIP'))
+console.log(earnPoints(100000,'GOLD'))
+console.log(earnPoints(100000,'SILVER'))
+console.log(earnPoints(100000,'일반'))
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
