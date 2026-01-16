@@ -1,6 +1,7 @@
 button {
   background: none;
   border: none;
+  padding: 0;
   &:focus {
     /* 포커스 링으로 버튼에 딱 맞게 스타일링이 되질 않는다. */
     outline: none;
@@ -15,6 +16,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 384px;
+  gap: 10px;
 
   .btn-img:hover {
     rect {

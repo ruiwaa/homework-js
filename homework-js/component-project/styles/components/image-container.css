@@ -2,6 +2,7 @@
 img {
   width: 160px;
   height: 172px;
+  margin-bottom: 5px;
 }
 .game-1 {
   background-image: url(../../images/game-1-bg.png);
@@ -9,5 +10,22 @@ img {
 }
 .game-2 {
   background-image: url(../../images/game-2-bg.png);
-  border-radius: 10px;
+  border-radius: 8px;
+}
+.game-3 {
+  background-image: url(../../images/game-3-bg.png);
+  border-radius: 8px;
+}
+
+.game-4 {
+  background-image: url(../../images/game-4-bg.png);
+  border-radius: 8px;
+}
+.game-5 {
+  background-image: url(../../images/game-5-bg.png);
+  border-radius: 8px;
+}
+.game-6 {
+  background-image: url(../../images/game-6-bg.png);
+  border-radius: 8px;
 }
