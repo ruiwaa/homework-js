@@ -1,0 +1,20 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "https://www.notion.so/JavaScript-2dc01fb4da2a80c398c5e1a76e4b6384?source=copy_link",
+  "homepage": "https://github.com/ruiwaa/homework-js#readme",
+  "bugs": {
+    "url": "https://github.com/ruiwaa/homework-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruiwaa/homework-js.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bunx live-server --host=localhost --port=3000 --no-browser"
+  }
+}

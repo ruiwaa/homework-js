@@ -1,0 +1,10 @@
+:root {
+  /* foreground / background */
+  --text-color: light-dark(var(--stone-950), var(--stone-50));
+  --background-color: light-dark(var(--yellow-500), var(--blue-950));
+  
+  /* menu */
+  --menu-text-color: light-dark(var(--nature-100), var(--nature-900));
+  --menu-text-hover-color: light-dark(var(--nature-950), var(--yellow-400));
+  --menu-background-color: light-dark(var(--nature-900), var(--yellow-500));
+}
