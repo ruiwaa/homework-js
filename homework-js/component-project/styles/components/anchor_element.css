@@ -1,0 +1,7 @@
+@import "../common/_theme.css" ;
+
+.game-container {
+  cursor: default;
+  text-decoration: none;
+ 
+}
