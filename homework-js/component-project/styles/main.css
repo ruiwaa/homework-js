@@ -8,3 +8,5 @@
 
 @import "./components/game-page.css" layer(components);
 @import "./components/anchor_element.css" layer(components);
+@import "./components/image-container.css" layer(components);
+@import "./components/button.css" layer(components);

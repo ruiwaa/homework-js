@@ -1,0 +1,24 @@
+button {
+  background: none;
+  border: none;
+  &:focus {
+    /* 포커스 링으로 버튼에 딱 맞게 스타일링이 되질 않는다. */
+    outline: none;
+    box-shadow: 0 0 0 2px #1a73e8;
+    border-radius: 50%;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content: center;
+  align-items: center;
+  width: 384px;
+
+  .btn-img:hover {
+    rect {
+      fill: #00000014;
+    }
+  }
+}
