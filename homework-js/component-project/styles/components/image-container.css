@@ -1,8 +1,6 @@
 /* 배경 이미지 삽입 */
 img {
   width: 160px;
-  height: 172px;
-  margin-bottom: 5px;
 }
 .game-1 {
   background-image: url(../../images/game-1-bg.png);
