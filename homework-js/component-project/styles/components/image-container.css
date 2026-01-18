@@ -1,29 +1,55 @@
 /* 배경 이미지 삽입 */
 img {
   width: 160px;
-}
-.game-1 {
-  background-image: url(../../images/game-1-bg.png);
-  border-radius: 8px;
-}
-.game-2 {
-  background-image: url(../../images/game-2-bg.png);
-  border-radius: 8px;
-}
-.game-3 {
-  background-image: url(../../images/game-3-bg.png);
-  border-radius: 8px;
+  height: 172px;
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform-origin: bottom;
+    transform: scale(1.02);
+  }
 }
 
-.game-4 {
+.bg-card-1 {
+  background-image: url(../../images/game-1-bg.png);
+  border-radius: 8px;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+}
+.bg-card-2 {
+  background-image: url(../../images/game-2-bg.png);
+  border-radius: 8px;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+}
+.bg-card-3 {
+  background-image: url(../../images/game-3-bg.png);
+  border-radius: 8px;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bg-card-4 {
   background-image: url(../../images/game-4-bg.png);
   border-radius: 8px;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
 }
-.game-5 {
+.bg-card-5 {
   /* background-image: url(../../images/game-5-bg.png); */
   border-radius: 8px;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
 }
-.game-6 {
+.bg-card-6 {
   /* background-image: url(../../images/game-6-bg.png); */
   border-radius: 8px;
+  height: 160px;
+  display: flex;
+  align-items: flex-end;
 }
