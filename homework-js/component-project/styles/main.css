@@ -3,7 +3,7 @@
 @import "./common/normalize.css" layer(base);
 @import "./common/base.css" layer(base);
 
-@import "./common/_theme.css" layer(theme);
+@import "./common/theme.css" layer(theme);
 
 
 @import "./components/game-page.css" layer(components);
