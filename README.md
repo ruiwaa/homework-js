@@ -4,4 +4,4 @@ https://www.notion.so/JavaScript-2dc01fb4da2a80c398c5e1a76e4b6384?source=copy_li
 
 ### 과제 수행 및 회고
 - [2주차 과제 수행 및 회고](./src/md/3주차%20과제%20수행%20및%20회고.md)
-- [3주차 과제 배포 사이트](./homework-js/component-project/index.html)
+- [3주차 과제 회고]
