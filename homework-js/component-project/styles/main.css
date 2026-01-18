@@ -1,10 +1,10 @@
 @layer base, theme, components, utilities;
 
-@import "./common/_normalize.css" layer(base);
-@import "./common/_base.css" layer(base);
+@import "./common/normalize.css" layer(base);
+@import "./common/base.css" layer(base);
 
 @import "./common/_theme.css" layer(theme);
-@import "./_theme.css" layer(theme);
+
 
 @import "./components/game-page.css" layer(components);
 @import "./components/anchor_element.css" layer(components);
