@@ -84,7 +84,7 @@ function updatePageNumber(currentNumber){
 
 }
 
-// 게임 페이지 디자인 업데이트 및 페이지 텝 제어
+// 게임 페이지 디자인 업데이트 
 function updatePage(currentNumber){
   // 조건문으로 작성한 경우
   // if(currentNumber === 1){
