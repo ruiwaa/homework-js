@@ -1,16 +1,15 @@
 @import "../common/_theme.css";
 
-body {
-  font-family: Noto Sans KR;
-}
+
 .recommended-games {
-  width: 136px;
+  width: 134px;
   display: flex;
   flex-flow: nowrap row;
   text-decoration: none;
   margin-block: 10px;
   margin-inline-start: 16px;
-  gap: 10px;
+  padding-inline: 8px 5px;
+  gap: 5px;
   align-items: center;
 
   &:hover {
@@ -33,12 +32,26 @@ span {
   display: inline-block;
   cursor: default;
   text-decoration: none;
+  color: inherit;
 
   h3 {
     color: black;
+    height: 18px;
+    font-size: 16px;
+    margin-block: 3px;
+    
+    .game-page[data-type="chapter-3"] &{
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+     line-height: 1.2;
+    }
+    
   }
+
   p {
     color: black;
+    font-size: 14px;
   }
 
   .game-type {

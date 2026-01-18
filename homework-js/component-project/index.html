@@ -8,164 +8,165 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <script src="./scripts/main.js" defer></script>
   </head>
-  <body>
-    <a href="/" class="recommended-games">
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-        <rect width="24" height="24" fill="url(#pattern0_509_3)" />
-        <defs>
-          <pattern
-            id="pattern0_509_3"
-            patternContentUnits="objectBoundingBox"
-            width="1"
-            height="1"
-          >
-            <use xlink:href="#image0_509_3" transform="scale(0.0208333)" />
-          </pattern>
-          <image
-            id="image0_509_3"
-            width="48"
-            height="48"
-            preserveAspectRatio="none"
-            xlink:href="data:image/png;base64,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"
-          />
-        </defs>
-      </svg>
-
-      <span>추천 게임</span>
-      <svg
-        width="7"
-        height="12"
-        viewBox="0 0 7 12"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>추천 게임으로 이동</title>
-        <path
-          d="M0.256286 0.251054C0.598002 -0.0836847 1.1519 -0.0836847 1.49361 0.251054L6.74371 5.39397C7.08543 5.72871 7.08543 6.27129 6.74371 6.60603L1.49361 11.7489C1.1519 12.0837 0.598002 12.0837 0.256286 11.7489C-0.0854288 11.4142 -0.0854288 10.8716 0.256286 10.5369L4.88772 6L0.256286 1.46312C-0.0854288 1.12838 -0.0854288 0.585793 0.256286 0.251054Z"
-          fill="#858585"
-        />
-      </svg>
-    </a>
-    <div class="game-wrapper">
-      <div class="game-page" data-type="chapter-1">
-        <section class="image-container">
-          <a href="/" class="game-container">
-            <img class="game-1" src="./images/game-1-img.png" alt="" />
-            <h3>크로노 오디세이</h3>
-            <p>멈춰 있던 시간이 흐른다</p>
-            <p class="game-type">MMORPG</p>
-          </a>
-        </section>
-        <section class="image-container">
-          <a href="/" class="game-container">
-            <img
-              class="game-2"
-              src="./images/game-2-img.png"
-              alt="아키에이지 워 게임"
+  <body >
+    <div class="game-component-project">
+      <a href="/" class="recommended-games">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <rect width="24" height="24" fill="url(#pattern0_509_3)" />
+          <defs>
+            <pattern
+              id="pattern0_509_3"
+              patternContentUnits="objectBoundingBox"
+              width="1"
+              height="1"
+            >
+              <use xlink:href="#image0_509_3" transform="scale(0.0208333)" />
+            </pattern>
+            <image
+              id="image0_509_3"
+              width="48"
+              height="48"
+              preserveAspectRatio="none"
+              xlink:href="data:image/png;base64,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"
             />
-            <h3>아키에이지 워</h3>
-            <p>시대의 전설을 향해</p>
-            <p class="game-type">MMORPG</p>
-          </a>
-        </section>
-      </div>
-      <div class="game-page" data-type="chapter-2">
-        <section class="image-container">
-          <a href="/" class="game-container">
-            <img class="game-3" src="./images/game-3-img.png" alt="" />
-            <h3>패스 오브 엑자일 2</h3>
-            <p>얼리 엑세스 오픈!</p>
-            <p class="game-type">핵앤슬래시</p>
-          </a>
-        </section>
-        <section class="image-container">
-          <a href="/" class="game-container">
-            <img class="game-4" src="./images/game-4-img.png" alt="" />
-            <h3>오딘: 발할라 라이징</h3>
-            <p>신의 영역을 차지하라</p>
-            <p class="game-type">MMORPG</p>
-          </a>
-        </section>
-      </div>
-      <div class="game-page" data-type="chapter-3">
-        <section class="image-container">
-          <a href="/" class="game-container">
-            <img class="game-5" src="./images/game-5-img.png" alt="" />
-            <h3>롬: 리멤버 오브 마제스티</h3>
-            <p>세계는 하나의 전장이 된다</p>
-            <p class="game-type">MMORPG</p>
-          </a>
-        </section>
-        <section class="image-container">
-          <a href="/" class="game-container">
-            <img class="game-6" src="./images/game-6-img.png" alt="" />
-            <h3>배틀그라운드</h3>
-            <p>최후까지 생존하라!</p>
-            <p class="game-type">배틀로얄</p>
-          </a>
-        </section>
-      </div>
-    </div>
-    <div class="button-container">
-      <button class="prev-btn">
+          </defs>
+        </svg>
+        <span>추천 게임</span>
         <svg
-          class="btn-img"
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
+          width="7"
+          height="12"
+          viewBox="0 0 7 12"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect
-            x="-0.5"
-            y="0.5"
-            width="39"
-            height="39"
-            rx="19.5"
-            transform="matrix(-1 0 0 1 39 0)"
-            stroke="black"
-            stroke-opacity="0.08"
-          />
+          <title>추천 게임으로 이동</title>
           <path
-            d="M23.707 13.293C23.3165 12.9024 22.6835 12.9024 22.293 13.293L16.293 19.293C15.9024 19.6835 15.9024 20.3165 16.293 20.707L22.293 26.707C22.6835 27.0975 23.3165 27.0975 23.707 26.707C24.0976 26.3165 24.0976 25.6835 23.707 25.293L18.4141 20L23.707 14.707C24.0976 14.3165 24.0976 13.6835 23.707 13.293Z"
-            fill="#474747"
+            d="M0.256286 0.251054C0.598002 -0.0836847 1.1519 -0.0836847 1.49361 0.251054L6.74371 5.39397C7.08543 5.72871 7.08543 6.27129 6.74371 6.60603L1.49361 11.7489C1.1519 12.0837 0.598002 12.0837 0.256286 11.7489C-0.0854288 11.4142 -0.0854288 10.8716 0.256286 10.5369L4.88772 6L0.256286 1.46312C-0.0854288 1.12838 -0.0854288 0.585793 0.256286 0.251054Z"
+            fill="#858585"
           />
         </svg>
-      </button>
-      <span class="page-1">1/3</span>
-      <span class="page-2">2/3</span>
-      <span class="page-3">3/3</span>
-      <button class="next-btn">
-        <svg
-          class="btn-img"
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="0.5"
-            y="0.5"
-            width="39"
-            height="39"
-            rx="19.5"
-            stroke="black"
-            stroke-opacity="0.08"
-          />
-          <path
-            d="M16.293 13.293C16.6835 12.9024 17.3165 12.9024 17.707 13.293L23.707 19.293C24.0976 19.6835 24.0976 20.3165 23.707 20.707L17.707 26.707C17.3165 27.0975 16.6835 27.0975 16.293 26.707C15.9024 26.3165 15.9024 25.6835 16.293 25.293L21.5859 20L16.293 14.707C15.9024 14.3165 15.9024 13.6835 16.293 13.293Z"
-            fill="#474747"
-          />
-        </svg>
-      </button>
+      </a>
+      <div class="game-wrapper">
+        <div class="game-page" data-type="chapter-1">
+          <section class="image-container">
+            <a href="/" class="game-container game-link1">
+              <img class="game-1" src="./images/game-1-img.png" alt="" />
+              <h3>크로노 오디세이</h3>
+              <p>멈춰 있던 시간이 흐른다</p>
+              <p class="game-type">MMORPG</p>
+            </a>
+          </section>
+          <section class="image-container">
+            <a href="/" class="game-container game-link2">
+              <img
+                class="game-2"
+                src="./images/game-2-img.png"
+                alt="아키에이지 워 게임"
+              />
+              <h3>아키에이지 워</h3>
+              <p>시대의 전설을 향해</p>
+              <p class="game-type">MMORPG</p>
+            </a>
+          </section>
+        </div>
+        <div class="game-page" data-type="chapter-2">
+          <section class="image-container">
+            <a href="/" class="game-container game-link3">
+              <img class="game-3" src="./images/game-3-img.png" alt="" />
+              <h3>패스 오브 엑자일 2</h3>
+              <p>얼리 엑세스 오픈!</p>
+              <p class="game-type">핵앤슬래시</p>
+            </a>
+          </section>
+          <section class="image-container">
+            <a href="/" class="game-container game-link4">
+              <img class="game-4" src="./images/game-4-img.png" alt="" />
+              <h3>오딘: 발할라 라이징</h3>
+              <p>신의 영역을 차지하라</p>
+              <p class="game-type">MMORPG</p>
+            </a>
+          </section>
+        </div>
+        <div class="game-page" data-type="chapter-3">
+          <section class="image-container">
+            <a href="/" class="game-container game-link5">
+              <img class="game-5" src="./images/game-5-img.png" alt="" />
+              <h3>롬: 리멤버 오브 마제스티</h3>
+              <p>세계는 하나의 전장이 된다</p>
+              <p class="game-type">MMORPG</p>
+            </a>
+          </section>
+          <section class="image-container">
+            <a href="/" class="game-container game-link6">
+              <img class="game-6" src="./images/game-6-img.png" alt="" />
+              <h3>배틀그라운드</h3>
+              <p>최후까지 생존하라!</p>
+              <p class="game-type">배틀로얄</p>
+            </a>
+          </section>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="prev-btn">
+          <svg
+            class="btn-img"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="-0.5"
+              y="0.5"
+              width="39"
+              height="39"
+              rx="19.5"
+              transform="matrix(-1 0 0 1 39 0)"
+              stroke="black"
+              stroke-opacity="0.08"
+            />
+            <path
+              d="M23.707 13.293C23.3165 12.9024 22.6835 12.9024 22.293 13.293L16.293 19.293C15.9024 19.6835 15.9024 20.3165 16.293 20.707L22.293 26.707C22.6835 27.0975 23.3165 27.0975 23.707 26.707C24.0976 26.3165 24.0976 25.6835 23.707 25.293L18.4141 20L23.707 14.707C24.0976 14.3165 24.0976 13.6835 23.707 13.293Z"
+              fill="#474747"
+            />
+          </svg>
+        </button>
+        <span class="page-1 active" aria-label="1번째 페이지, 현재 페이지">1/3</span>
+        <span class="page-2 " aria-label="2번째 페이지, 현재 페이지">2/3</span>
+        <span class="page-3 " aria-label="3번째 페이지, 현재 페이지">3/3</span>
+        <button class="next-btn">
+          <svg
+            class="btn-img"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.5"
+              y="0.5"
+              width="39"
+              height="39"
+              rx="19.5"
+              stroke="black"
+              stroke-opacity="0.08"
+            />
+            <path
+              d="M16.293 13.293C16.6835 12.9024 17.3165 12.9024 17.707 13.293L23.707 19.293C24.0976 19.6835 24.0976 20.3165 23.707 20.707L17.707 26.707C17.3165 27.0975 16.6835 27.0975 16.293 26.707C15.9024 26.3165 15.9024 25.6835 16.293 25.293L21.5859 20L16.293 14.707C15.9024 14.3165 15.9024 13.6835 16.293 13.293Z"
+              fill="#474747"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </body>
 </html>
