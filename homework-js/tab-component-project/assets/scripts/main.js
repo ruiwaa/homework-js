@@ -25,7 +25,6 @@ console.log(tabContentList)
 
 for(let i =0, l= buttonList.length; i < l; i++){
   const buttonItem = buttonList[i]
-
   buttonItem.addEventListener('click',()=>{
     for(let contentindex = 0, articleLength = tabContentList.length; contentindex < articleLength; contentindex++){
       const articleItem = tabContentList[contentindex]
