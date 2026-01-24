@@ -1,36 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="탭 컴포넌트 과제" />
-  <title>tab 메뉴 컴포넌트 과제</title>
-  <script src="./assets/scripts/main.js" defer></script>
-  <link rel="stylesheet" href="./assets/styles/main.css" />
-</head>
-<body>
-  <!-- 1단계: 큰 div (전체 감싸기) -->
-<div class="container">
-  
-  <!-- 2단계: nav 영역 감싸는 div -->
-  <section class="nav-wrapper">
-    <nav class="tab-nav">
-      <button>카드 관리</button>
-      <button>거래 조회</button>
-    </nav>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="탭 컴포넌트 과제" />
+    <title>tab 메뉴 컴포넌트 과제</title>
+    <script src="./assets/scripts/main.js" defer></script>
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+  </head>
+  <body>
+    <div class="tab-container">
+      <div class="nav-wrapper">
+        <nav class="tab-nav">
+          <button id="tab-1" aria-label="계좌 조회">
+            <img
+              src="./assets/images/계좌조회_아이콘.png"
+              data-type="icon"
+              alt=""
+            />
+            <span>계좌 조회</span>
+          </button>
+          <button id="tab-2" aria-label="투자 현황">
+            <img
+              src="./assets/images/투자현황_아이콘.png"
+              data-type="icon"
+              alt=""
+            />
+            <span>투자 현황</span>
+          </button>
+          <button id="tab-3" aria-label="거래 내역">
+            <img
+              src="./assets/images/거래내역_아이콘.png"
+              data-type="icon"
+              alt=""
+            />
+            <span>거래 내역</span>
+          </button>
+          <button id="tab-4" aria-label="카드 관리">
+            <img
+              src="./assets/images/카드관리_아이콘.png"
+              data-type="icon"
+              alt=""
+            />
+            <span>카드 관리</span>
+          </button>
+        </nav>
+      </div>
 
-  <!-- 2단계: content 영역 감싸는 div -->
-  <section class="content-wrapper">
-    
-    <!-- 3단계: 각 콘텐츠를 감싸는 div -->
-    <article class="tab-content" role="tabpanel">콘텐츠1</article>
-    <article class="tab-content" role="tabpanel">콘텐츠2</article>
-    <article class="tab-content" role="tabpanel">콘텐츠3</article>
-    
-  </section>
+      <div class="content-wrapper">
+        <article
+          class="tab-content is-active"
+          id="panel-1"
+          aria-controls="panel-1"
+        >
+          <h2>계좌 정보</h2>
+          <dl class="acount-info">
+            <dt>입출금 계좌</dt>
+            <dd>123-456-789012</dd>
+            <dd>12345678 원</dd>
+          </dl>
+          <dl class="acount-info">
+            <dt>입출금 계좌</dt>
+            <dd>123-456-789012</dd>
+            <dd>12345678 원</dd>
+          </dl>
+        </article>
+        <article class="tab-content is-active" id="panel-2" aria-controls="panel-2">
+          <h2>투자 포트폴리오</h2>
+          <dl class="content-column">
+            <dt>국내 주식</dt>
+            <dd>10종목 보유</dd>
+            <dt>23456789원</dt>
+            <dd>+5.2%</dd>
+          </dl>
+          <dl class="content-column">
+            <dt>해외 주식</dt>
+            <dd>5종목 보유</dd>
+            <dt>15234567 원</dt>
+            <dd>-2.1%</dd>
+          </dl>
+          <dl class="content-column">
+            <dt>펀드</dt>
+            <dd>3개 상품</dd>
+            <dt>8123456 원</dt>
+            <dd>+3.7%</dd>
+          </dl>
+        </article>
+        <article class="tab-content" id="panel-3" aria-controls="panel-3">
+          <h2>거래 내역</h2>
+          <div class="transaction-card">
+            <time datetime="2026-01-22">2026.01.22</time>
+            <span class="sr-only">지출</span>
+            <span class="jsComponentPrice">-6500 원</span>
+            <strong>스타벅스 강남점</strong>
+          </div>
+          <div class="transaction-card">
+            <time datetime="2026-01-22">2026.01.22</time>
+            <span class="jsComponentPrice">+3500000 원</span>
+            <strong>급여 입금</strong>
+          </div>
+          <div class="transaction-card">
+            <time datetime="2026-01-21">2026.01.21</time>
+            <span class="sr-only">지출</span>
+            <span class="jsComponentPrice">-12300 원</span>
+            <strong>GS25 편의점</strong>
+          </div>
 
-</div>
+          <div class="transaction-card">
+            <time datetime="2026-01-21">2026.01.21</time>
+            <span class="sr-only">송금</span>
+            <span class="jsComponentPrice">-50000 원</span>
+            <strong>카카오페이 송금</strong>
+          </div>
 
-</body>
+          <div class="transaction-card">
+            <time datetime="2026-01-20">2026.01-20</time>
+            <span class="sr-only">지출</span>
+            <span class="jsComponentPrice">-89000 원</span>
+            <strong>쿠팡 결제</strong>
+          </div>
+        </article>
+        <article class="tab-content" id="panel-4" aria-controls="panel-4">
+          <h2>보유 카드</h2>
+          <div class="bank-card-info">
+            <h3 class="card-brand">신한카드</h3>
+            <span class="card-number">1234 5678 9012 3456</span>
+            <dl>
+              <dt class="this-month-amount-used">이번 달 사용액</dt>
+              <dd class="this-month-amount">1234560 원</dd>
+            </dl>
+            <strong class="card-logo" aria-hidden="true">VISA</strong>
+          </div>
+          <div class="bank-card-info">
+            <h3 class="card-brand">KB국민카드</h3>
+            <span class="card-number">9876 5432 1098 7654</span>
+            <dl>
+              <dt class="this-month-amount-used">이번 달 사용액</dt>
+              <dd class="this-month-amount">567890 원</dd>
+            </dl>
+            <strong class="card-logo" aria-hidden="true">Mastercard</strong>
+          </div>
+        </article>
+      </div>
+    </div>
+  </body>
 </html>

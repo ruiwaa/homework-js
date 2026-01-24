@@ -1,5 +1,92 @@
 @import "../theme.css" layer(theme);
 
-body{
+body {
+  block-size: 814px;
   font-family: Noto Sans KR;
+  background-color: #e0e3e7;
+  display: flex;
+  justify-content: center;
+
+  .tab-container {
+    inline-size: 568px;
+    block-size: 614px;
+    background-color: var(--white);
+    margin: auto;
+    border-radius: 10px;
+  }
+}
+.nav-wrapper {
+  inline-size: 100%;
+  block-size: 73px;
+  margin: auto;
+  border-bottom: 1px solid #e5e7eb;
+
+  .tab-nav {
+    margin: 5px;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    &:focus {
+      border-bottom: 3px solid #055fea;
+    }
+  }
+}
+
+button {
+  inline-size: 140px;
+  block-size: 73px;
+  padding: 0px;
+  border: none;
+
+  &:hover {
+    background-color: #f6f8fe;
+    border-bottom: 3px solid #055fea;
+
+    span {
+      color: #055fea;
+    }
+    [data-type="icon"] {
+      filter: invert(31%) sepia(84%) saturate(4709%) hue-rotate(215deg)
+        brightness(97%) contrast(97%);
+    }
+  }
+  &:focus {
+    border-radius: 10px;
+    outline: dotted;
+    color: #055fea;
+    [data-type="icon"] {
+      filter: invert(31%) sepia(84%) saturate(4709%) hue-rotate(215deg)
+        brightness(97%) contrast(97%);
+    }
+  }
+
+  [data-type="icon"] {
+    inline-size: 25px;
+    block-size: 25px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+}
+.content-wrapper {
+  h2 {
+    font-size: 18px;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+  }
+
+  dl,
+  dt,
+  dd {
+    margin: 0;
+    padding: 0;
+  }
 }

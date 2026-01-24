@@ -6,4 +6,5 @@
 @import "./theme.css" layer(theme);
 
 
-@import "./components/nav-component.css" layer(component)
+@import "./components/nav-component.css" layer(component);
+@import "./components/article-component.css" layer(component);
