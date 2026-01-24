@@ -10,6 +10,7 @@
   </head>
   <body>
     <div class="tab-container">
+      <h1 class="sr-only">탭 메뉴</h1>
       <div class="nav-wrapper">
         <nav class="tab-nav">
           <button id="tab-1" aria-label="계좌 조회">
@@ -49,7 +50,7 @@
 
       <div class="content-wrapper">
         <article
-          class="tab-content is-active"
+          class="tab-content "
           id="panel-1"
           aria-controls="panel-1"
         >
@@ -70,13 +71,13 @@
           <dl class="content-column">
             <dt>국내 주식</dt>
             <dd>10종목 보유</dd>
-            <dt>23456789원</dt>
+            <dt class="jsComponentPrice">23456789원</dt>
             <dd>+5.2%</dd>
           </dl>
           <dl class="content-column">
             <dt>해외 주식</dt>
             <dd>5종목 보유</dd>
-            <dt>15234567 원</dt>
+            <dt class="jsComponentPrice">15234567 원</dt>
             <dd>-2.1%</dd>
           </dl>
           <dl class="content-column">
@@ -127,7 +128,7 @@
             <span class="card-number">1234 5678 9012 3456</span>
             <dl>
               <dt class="this-month-amount-used">이번 달 사용액</dt>
-              <dd class="this-month-amount">1234560 원</dd>
+              <dd class="this-month-amount jsComponentPrice">1234560 원</dd>
             </dl>
             <strong class="card-logo" aria-hidden="true">VISA</strong>
           </div>
@@ -136,7 +137,7 @@
             <span class="card-number">9876 5432 1098 7654</span>
             <dl>
               <dt class="this-month-amount-used">이번 달 사용액</dt>
-              <dd class="this-month-amount">567890 원</dd>
+              <dd class="this-month-amount jsComponentPrice">567890 원</dd>
             </dl>
             <strong class="card-logo" aria-hidden="true">Mastercard</strong>
           </div>

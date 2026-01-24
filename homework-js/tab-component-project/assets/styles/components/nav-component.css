@@ -7,12 +7,23 @@ body {
   display: flex;
   justify-content: center;
 
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+  }
+
+
   .tab-container {
     inline-size: 568px;
     block-size: 614px;
     background-color: var(--white);
     margin: auto;
     border-radius: 10px;
+    box-shadow: 0 0 5px var(--gray-300);
   }
 }
 .nav-wrapper {
@@ -55,6 +66,7 @@ button {
   &:focus {
     border-radius: 10px;
     outline: dotted;
+    border-bottom: 3px solid #055fea;
     color: #055fea;
     [data-type="icon"] {
       filter: invert(31%) sepia(84%) saturate(4709%) hue-rotate(215deg)
@@ -72,15 +84,6 @@ button {
 .content-wrapper {
   h2 {
     font-size: 18px;
-  }
-
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
   }
 
   dl,
