@@ -3,6 +3,7 @@
 @import "./common/normalize.css" layer(base);
 @import "./common/base.css" layer(base);
 
-@import "./common/theme.css" layer(theme);
+@import "./theme.css" layer(theme);
 
 
+@import "./components/nav-component.css" layer(component)

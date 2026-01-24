@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="탭 컴포넌트 과제" />
+  <title>tab 메뉴 컴포넌트 과제</title>
+  <script src="./assets/scripts/main.js" defer></script>
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
+<body>
+  <!-- 1단계: 큰 div (전체 감싸기) -->
+<div class="container">
+  
+  <!-- 2단계: nav 영역 감싸는 div -->
+  <section class="nav-wrapper">
+    <nav class="tab-nav">
+      <button>카드 관리</button>
+      <button>거래 조회</button>
+    </nav>
+  </section>
+
+  <!-- 2단계: content 영역 감싸는 div -->
+  <section class="content-wrapper">
+    
+    <!-- 3단계: 각 콘텐츠를 감싸는 div -->
+    <article class="tab-content" role="tabpanel">콘텐츠1</article>
+    <article class="tab-content" role="tabpanel">콘텐츠2</article>
+    <article class="tab-content" role="tabpanel">콘텐츠3</article>
+    
+  </section>
+
+</div>
+
+</body>
+</html>
