@@ -42,6 +42,10 @@ for(let i =0, l= buttonList.length; i < l; i++){
 )
 }
 
+// forEach 문 활요
+
+// 함수 대입하여 이벤트 생성
+
 //테스트 코드
 console.log(buttonList)
 console.log(tabContentList)

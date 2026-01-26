@@ -13,7 +13,7 @@
       <h1 class="sr-only">탭 메뉴</h1>
       <div class="nav-wrapper">
         <nav class="tab-nav">
-          <button id="tab-1" aria-label="계좌 조회">
+          <button role="tab" id="tab-1" aria-label="계좌 조회" >
             <img
               src="./assets/images/계좌조회_아이콘.png"
               data-type="icon"
@@ -21,7 +21,7 @@
             />
             <span>계좌 조회</span>
           </button>
-          <button id="tab-2" aria-label="투자 현황">
+          <button role="tab" id="tab-2" aria-label="투자 현황">
             <img
               src="./assets/images/투자현황_아이콘.png"
               data-type="icon"
@@ -29,7 +29,7 @@
             />
             <span>투자 현황</span>
           </button>
-          <button id="tab-3" aria-label="거래 내역">
+          <button role="tab" id="tab-3" aria-label="거래 내역">
             <img
               src="./assets/images/거래내역_아이콘.png"
               data-type="icon"
@@ -37,7 +37,7 @@
             />
             <span>거래 내역</span>
           </button>
-          <button id="tab-4" aria-label="카드 관리">
+          <button role="tab" id="tab-4" aria-label="카드 관리">
             <img
               src="./assets/images/카드관리_아이콘.png"
               data-type="icon"
@@ -50,7 +50,7 @@
 
       <div class="content-wrapper">
         <article
-          class="tab-content "
+          class="tab-content is-active "
           id="panel-1"
           aria-controls="panel-1"
         >
@@ -66,7 +66,7 @@
             <dd>12345678 원</dd>
           </dl>
         </article>
-        <article class="tab-content is-active" id="panel-2" aria-controls="panel-2">
+        <article class="tab-content " id="panel-2" aria-controls="panel-2">
           <h2>투자 포트폴리오</h2>
           <dl class="content-column">
             <dt>국내 주식</dt>

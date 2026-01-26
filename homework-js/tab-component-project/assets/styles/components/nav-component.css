@@ -33,20 +33,17 @@ body {
   border-bottom: 1px solid #e5e7eb;
 
   .tab-nav {
-    margin: 5px;
+    inline-size: calc(568 / 4)px;
     display: flex;
     flex-flow: nowrap row;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    &:focus {
-      border-bottom: 3px solid #055fea;
-    }
+    
+  
   }
 }
 
 button {
-  inline-size: 140px;
+  width: 100%;
   block-size: 73px;
   padding: 0px;
   border: none;
@@ -63,7 +60,14 @@ button {
         brightness(97%) contrast(97%);
     }
   }
-  &:focus {
+
+  /* 기본 브라우저 포커스 스타일 제거 */
+
+  &:focus{
+    outline: none;
+  }
+
+  &:focus-visible {
     border-radius: 10px;
     outline: dotted;
     border-bottom: 3px solid #055fea;
