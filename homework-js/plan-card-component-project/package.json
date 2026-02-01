@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "bunx live-server --host=localhost --port=3000 --entry-file=index.html --no-browser",
+    "lint": "eslint .",
+    "hint": "htmlhint **/*.html"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "htmlhint": "^1.8.0"
+  }
+}
