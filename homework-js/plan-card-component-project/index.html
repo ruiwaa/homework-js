@@ -9,5 +9,158 @@
   </head>
   <body>
     <a href="#main-content" class="sr-only focusable">본문 바로가기</a>
+    <h1 class="sr-only">요금제 플랜 비교</h1>
+    <main class="plan-card-container">
+      <div class="plan-card-info-container">
+        <div class="card-wrapper">
+          <svg
+            hidden
+            aria-hidden="true"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2C23.732 2 30 8.26801 30 16C30 23.732 23.732 30 16 30C8.26801 30 2 23.732 2 16C2 8.26801 8.26801 2 16 2Z"
+              fill="#407EEE"
+              stroke="white"
+              stroke-width="4"
+            />
+            <path
+              d="M14.5 17.5507C20.5 11.5507 22 10.762 22.5 11.0507C23.5 11.5507 22.5 13.0507 21.5 14.0507C20.5 15.0507 14.5 22.5507 12.5 22.0507C10.5 21.5507 10 17.0507 10 16.5507C10 16.0507 10 14.0507 12 14.0507C14 14.0507 14 18.0507 14.5 17.5507Z"
+              fill="white"
+            />
+          </svg>
+
+          <article
+            class="plan-card focusable"
+            data-name="price-card-1"
+            tabindex="0"
+          >
+            <h2 class="plan-option" aria-label="베이직 멤버쉽">BASIC</h2>
+            <span
+              class="plan-price"
+              data-type="membership-grade"
+              aria-label="베이직 멤버쉽 가격"
+              >Free</span
+            >
+            <ul class="plan-details">
+              <li>기본 대시보드 제공</li>
+              <li>월 10회 리포트</li>
+              <li>커뮤니티 지원</li>
+            </ul>
+            <button
+              type="button"
+              class="plan-price-button"
+              aria-label="베이직 플랜 선택"
+              aria-pressed="false"
+            ></button>
+          </article>
+        </div>
+        <div class="card-wrapper">
+          <svg
+            hidden
+            aria-hidden="true"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2C23.732 2 30 8.26801 30 16C30 23.732 23.732 30 16 30C8.26801 30 2 23.732 2 16C2 8.26801 8.26801 2 16 2Z"
+              fill="#407EEE"
+              stroke="white"
+              stroke-width="4"
+            />
+            <path
+              d="M14.5 17.5507C20.5 11.5507 22 10.762 22.5 11.0507C23.5 11.5507 22.5 13.0507 21.5 14.0507C20.5 15.0507 14.5 22.5507 12.5 22.0507C10.5 21.5507 10 17.0507 10 16.5507C10 16.0507 10 14.0507 12 14.0507C14 14.0507 14 18.0507 14.5 17.5507Z"
+              fill="white"
+            />
+          </svg>
+          <article
+            class="plan-card focusable"
+            data-name="price-card-2"
+            tabindex="0"
+          >
+            <h2
+              class="plan-option"
+              data-type="membership-grade"
+              aria-label="스탠다드 멤버쉽"
+            >
+              STANDARD
+            </h2>
+            <span class="plan-price" aria-label="스탠다드 멤버쉽 가격"
+              >₩15000</span
+            >
+            <ul class="plan-details">
+              <li>모든 기능 무제한</li>
+              <li>광고 제거</li>
+              <li>이메일 고객 지원</li>
+              <li>데이터 내보내기</li>
+            </ul>
+            <button
+              type="button"
+              class="plan-price-button"
+              aria-label="스탠다드 플랜 선택"
+              aria-pressed="false"
+            ></button>
+          </article>
+        </div>
+        <div class="card-wrapper">
+          <svg
+            hidden
+            aria-hidden="true"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 2C23.732 2 30 8.26801 30 16C30 23.732 23.732 30 16 30C8.26801 30 2 23.732 2 16C2 8.26801 8.26801 2 16 2Z"
+              fill="#407EEE"
+              stroke="white"
+              stroke-width="4"
+            />
+            <path
+              d="M14.5 17.5507C20.5 11.5507 22 10.762 22.5 11.0507C23.5 11.5507 22.5 13.0507 21.5 14.0507C20.5 15.0507 14.5 22.5507 12.5 22.0507C10.5 21.5507 10 17.0507 10 16.5507C10 16.0507 10 14.0507 12 14.0507C14 14.0507 14 18.0507 14.5 17.5507Z"
+              fill="white"
+            />
+          </svg>
+          <article
+            class="plan-card focusable"
+            data-name="price-card-3"
+            tabindex="0"
+          >
+            <h2 class="plan-option" aria-label="프리미엄 멤버쉽">PREMIUM</h2>
+            <span
+              class="plan-price"
+              data-type="membership-grade"
+              aria-label="프리미엄 멤버쉽 가격"
+              >₩30000</span
+            >
+            <ul class="plan-details">
+              <li>Standard 혜택 전체</li>
+              <li>전담 매니저 배정</li>
+              <li>API 액세스 권한</li>
+              <li>초기 설정 컨설팅</li>
+            </ul>
+            <button
+              type="button"
+              class="plan-price-button"
+              aria-label="프리미엄 플랜 선택"
+              aria-pressed="false"
+            ></button>
+          </article>
+        </div>
+      </div>
+      <div class="selected-option" aria-label="선택된 플랜 멤버쉽" hidden>
+        <strong id="plan-membership"></strong>
+        <span data-type="plan-membership">플랜을 선택하셨습니다.</span>
+      </div>
+    </main>
   </body>
 </html>

@@ -1,3 +1,152 @@
+body {
+  font-family: "Noto Sans KR";
+  background-color: #e9eef3;
+  max-width: 1520px;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+
+  .plan-card-container {
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .plan-card-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .card-wrapper {
+    width: 278px;
+    height: 338px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    /* 아이콘 배치 */
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: -10px;
+      left: 45%;
+    }
+  }
+
+  .plan-card {
+    background-color: var(--white);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 40px 33px;
+    border-radius: 20px;
+    border: 2px solid #f2f5f8;
+    transition: all 0.3s ease;
+
+    &.active {
+      background-color: #e8effd;
+      border: 2px solid #055fea;
+      box-shadow: 0 0 0 4px #d2e0f9;
+    }
+
+    &:hover {
+      transform: scale(0.98);
+    }
+
+    &.focusable:focus-visible {
+      background-color: #e8effd;
+      border: 2px solid #055fea;
+      box-shadow: 0 0 0 4px #d2e0f9;
+    }
+  }
+
+  h2 {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .plan-price {
+    color: var(--black);
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 212px;
+      height: 1px;
+      background-color: #f5f7fa;
+    }
+  }
+  ul {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    align-self: stretch;
+    color: var(--black);
+    /* display: flex;
+    column-gap: 6px; 마커에 마진 줄 수 없음 */
+
+    li {
+      list-style-position: inside;
+      &::marker {
+        content: "✓ ";
+        width: 12px;
+        height: 12px;
+        margin-right: 6px;
+        color: #407eee;
+        font-weight: bold;
+      }
+    }
+  }
+
+  [data-name="price-card-2"] ul {
+    font-size: 0.9375rem;
+    letter-spacing: 0.15px;
+  }
+}
+button {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.selected-option {
+  width: 442px;
+  height: 69px;
+  background-color: white;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+  border-radius: 100px;
+  padding: 24px 0 24px 0;
+  box-shadow: 0 0 16px 0 rgba(30, 38, 60, 0.1);
+}
+
 .sr-only {
   overflow: hidden;
   position: absolute;
