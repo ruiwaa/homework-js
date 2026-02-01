@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="요금제 플랜 비교 컴포넌트 과제" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
+    <script src="./assets/scripts/main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <a href="#main-content" class="sr-only focusable">본문 바로가기</a>
     <h1 class="sr-only">요금제 플랜 비교</h1>
+    <a href="#main-content" class="sr-only focusable-main">본문 바로가기</a>
     <main class="plan-card-container">
       <div class="plan-card-info-container">
         <div class="card-wrapper">
@@ -35,16 +36,17 @@
 
           <article
             class="plan-card focusable"
-            data-name="price-card-1"
+            data-plan="price-card-1"
             tabindex="0"
           >
             <h2 class="plan-option" aria-label="베이직 멤버쉽">BASIC</h2>
-            <span
+            <p
               class="plan-price"
-              data-type="membership-grade"
+              data-price="free"
               aria-label="베이직 멤버쉽 가격"
-              >Free</span
             >
+              Free
+            </p>
             <ul class="plan-details">
               <li>기본 대시보드 제공</li>
               <li>월 10회 리포트</li>
@@ -80,7 +82,7 @@
           </svg>
           <article
             class="plan-card focusable"
-            data-name="price-card-2"
+            data-plan="price-card-2"
             tabindex="0"
           >
             <h2
@@ -90,9 +92,7 @@
             >
               STANDARD
             </h2>
-            <span class="plan-price" aria-label="스탠다드 멤버쉽 가격"
-              >₩15000</span
-            >
+            <p class="plan-price" data-price="15000" aria-label="스탠다드 멤버쉽 가격">₩15000</p>
             <ul class="plan-details">
               <li>모든 기능 무제한</li>
               <li>광고 제거</li>
@@ -129,16 +129,17 @@
           </svg>
           <article
             class="plan-card focusable"
-            data-name="price-card-3"
+            data-plan="price-card-3"
             tabindex="0"
           >
             <h2 class="plan-option" aria-label="프리미엄 멤버쉽">PREMIUM</h2>
-            <span
+            <p
               class="plan-price"
-              data-type="membership-grade"
+              data-price="30000"
               aria-label="프리미엄 멤버쉽 가격"
-              >₩30000</span
             >
+              ₩30000
+            </p>
             <ul class="plan-details">
               <li>Standard 혜택 전체</li>
               <li>전담 매니저 배정</li>
