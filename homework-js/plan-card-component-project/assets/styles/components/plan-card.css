@@ -33,9 +33,13 @@ body {
     position: relative;
 
     svg {
-      position: absolute;
-      top: -10px;
-      left: 45%;
+      display: none;
+
+      &.active {
+        position: absolute;
+        top: -10px;
+        left: 45%;
+      }
     }
   }
 
@@ -57,6 +61,11 @@ body {
 
     &:hover {
       transform: scale(0.98);
+      border: 2px solid #beccdb;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px #d2e0f9;
     }
 
     &.focusable:focus-visible {
