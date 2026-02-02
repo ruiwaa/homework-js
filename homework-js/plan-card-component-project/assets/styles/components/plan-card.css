@@ -13,7 +13,7 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
 
   .plan-card-info-container {
@@ -55,6 +55,7 @@ body {
     border-radius: 20px;
     border: 2px solid #f2f5f8;
     transition: all 0.3s ease;
+    cursor: pointer;
     
 
     &.active {
@@ -69,14 +70,15 @@ body {
     }
 
     &:focus {
-      box-shadow: 0 0 0 4px #d2e0f9;
+      outline: none;
     }
 
-    &.focusable:focus-visible {
-      background-color: #e8effd;
-      border: 2px solid #055fea;
-      box-shadow: 0 0 0 4px #d2e0f9;
-    }
+   &:focus-visible {
+  
+  border: 2px solid #e8effd;
+  box-shadow: 0 0 0 4px #d2e0f9;
+}
+
   }
 
   h2 {
@@ -144,6 +146,11 @@ button {
   outline: none;
   border: none;
   background: none;
+
+  &:focus-visible  {
+      outline: none;
+    }
+  
 }
 
 .selected-option {
