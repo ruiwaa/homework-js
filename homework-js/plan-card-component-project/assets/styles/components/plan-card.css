@@ -60,7 +60,6 @@ body {
 
     &.active {
       background-color: #e8effd;
-      border: 2px solid #055fea;
       box-shadow: 0 0 0 4px #d2e0f9;
     }
 

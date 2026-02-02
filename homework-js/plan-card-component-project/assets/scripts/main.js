@@ -1,5 +1,4 @@
 /**
- * 
  * 자바스크립트로 제어해야 할 것들
  * 1. 배타적 선택 (Exclusive Selection)
  3개의 요금제 중 단 하나만 선택 가능 (클릭 시, 다른 카드의 선택 해제)✅
@@ -17,7 +16,6 @@ const priceCard1 = document.querySelector('[data-plan="price-card-1"]')
 const priceCard2 = document.querySelector('[data-plan="price-card-2"]')
 const priceCard3 = document.querySelector('[data-plan="price-card-3"]')
 const priceNumber = document.querySelectorAll('.plan-price')
-const buttons = document.querySelectorAll('.plan-price-button')
 const selectedOption = document.querySelector('.selected-option')
 
 
@@ -57,7 +55,9 @@ const handleSelect = (card) => {
 
   // 버튼에 aria-pressed 속성 추가
   const button = card.querySelector('.plan-price-button')
-  button ? setAttr(button, 'aria-pressed', 'true'): setAttr(button, 'tabindex', '-1')
+  if(button) {
+  setAttr(button, 'aria-pressed', 'true')
+}
   
 }
 
@@ -72,7 +72,7 @@ const showOptionInfo = function (card){
       const membershipValue = membership.textContent
       const strong = optionInfo.querySelector('#plan-membership')
       const span = optionInfo.querySelector('[data-type="plan-membership"]')
-      
+
       strong? (strong.textContent = `${membershipValue}`): null
       span? span.textContent = `플랜(${priceValue})을 선택하셨습니다.` : null
 
@@ -88,7 +88,6 @@ const active = () => {
     // 클릭 이벤트에 handleSelect 함수 연결
     card.addEventListener('click', (e) => {
       handleSelect(e.currentTarget)
-      selectedOption
       showOptionInfo(e.currentTarget)
     }    
    , {capture: true})
@@ -99,33 +98,23 @@ const active = () => {
     card.addEventListener('keydown', (e) => {
       if(e.key === 'Enter') {
         handleSelect(e.currentTarget)
+        showOptionInfo(e.currentTarget)
       }
     })
 
-   
- 
 })
 }
 // 함수 실행
 active()
 
 // 이전에 선택된 카드 비활성화 함수 만들기
-const removeSelected = () => {
-  planCards.forEach((card) => {
+const removeSelected = (card) => {
 
   //카드와 아이콘에 클래스명 제거
   card.classList.remove('active')
   const icon = card.previousElementSibling
   if(icon) icon.classList.remove('active')
 
-  })
- 
-  // 버튼
-  buttons.forEach((button) => {
-    if(button) {
-      setAttr(button, 'aria-pressed', 'false') 
-    }
-  })
  
 }
 
