@@ -35,6 +35,7 @@ body {
 
     svg {
       opacity: 0;
+      transition: all 0.3s ease;
 
       &.active {
         position: absolute;
@@ -42,6 +43,7 @@ body {
         z-index: 1;
         top: -10px;
         left: 45%;
+        transform: scale(1.2);
       }
     }
   }
@@ -61,6 +63,10 @@ body {
     &.active {
       background-color: #e8effd;
       box-shadow: 0 0 0 4px #d2e0f9;
+
+      h2{
+        color: #407eee;
+      }
     }
 
     &:hover {
@@ -89,6 +95,7 @@ body {
     letter-spacing: 0.64px;
     margin-bottom: 25px;
     text-align: center;
+
   }
 
   .plan-price {
