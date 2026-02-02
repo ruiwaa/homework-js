@@ -12,9 +12,6 @@
 // 1 단계: 팔요한 변수값 할당
 const planCards =document.querySelectorAll('.plan-card')
 const planCard = document.querySelector('.plan-card')
-const priceCard1 = document.querySelector('[data-plan="price-card-1"]')
-const priceCard2 = document.querySelector('[data-plan="price-card-2"]')
-const priceCard3 = document.querySelector('[data-plan="price-card-3"]')
 const priceNumber = document.querySelectorAll('.plan-price')
 const selectedOption = document.querySelector('.selected-option')
 
@@ -57,11 +54,16 @@ function removeAttr(element, attrName, attrValue){
 // 3) 플랜 카드 클릭 이벤트 핸들러 함수 
 const handleSelect = (card) => {
 const icon = card.previousElementSibling
+const button = card.querySelector('.plan-price-button')
 
   // 3-1 선택되지 않은 플랜 카드 비활성화
   planCards.forEach((selectedCard) => {
     if(selectedCard !== card) {
       removeSelected(selectedCard)
+  
+
+      const otherButton = selectedCard.querySelector('.plan-price-button')
+      if(otherButton) setAttr(otherButton, 'aria-pressed', 'false')
     }
   })
 
@@ -76,7 +78,7 @@ const icon = card.previousElementSibling
   removeAttr(selectedOption,'hidden',null) 
   
   //3-2-5 버튼에 aria-pressed 속성 추가
-  const button = card.querySelector('.plan-price-button')
+  
   if(button) {
   setAttr(button, 'aria-pressed', 'true')
 }
