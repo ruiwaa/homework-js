@@ -13,6 +13,8 @@ const planCardsContainer = document.querySelector('.plan-card-info-container')
 const planCards =document.querySelectorAll('.plan-card')
 const priceNumbers = document.querySelectorAll('.plan-price')
 const selectedOption = document.querySelector('.selected-option')
+const strong = document.querySelector('#plan-membership')
+const span = document.querySelector('[data-type="plan-membership"]')
 
 
 // 2 단계: plan-price 가격 쉼표 추가 함수
@@ -93,8 +95,6 @@ const button = target.querySelector('.plan-price-button')
 
 const showOptionInfo = (target) => {
   // 필요한 변수 할당
-      const strong = document.querySelector('#plan-membership')
-      const span = document.querySelector('[data-type="plan-membership"]')
       const membershipValue = target.querySelector('.plan-option').textContent
       const priceData = target.querySelector('.plan-price').dataset.price
       
